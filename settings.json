@@ -1,0 +1,23 @@
+{
+  "user": "fullName",
+  "user.age": "age",
+  "user.tags": {
+    "key": "firstTag",
+    "index": 0
+  },
+  "user.tags": {
+    "key": "secondTag",
+    "index": 1
+  },
+  "user.addresses": {
+    "key": "city",
+    "index": 0,
+    "nested": {
+      "city": "cityName"
+    }
+  },
+  "user.skills": {
+    "key": "mainSkill",
+    "index": 0
+  }
+}
