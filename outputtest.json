@@ -1,0 +1,9 @@
+{
+  "fullName" : "John",
+  "age" : 30,
+  "secondTag" : "python",
+  "city" : {
+    "cityName" : "Moscow"
+  },
+  "mainSkill" : "backend"
+}

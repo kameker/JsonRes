@@ -1,0 +1,27 @@
+<config>
+    <mapping>
+        <src>user.name</src>
+        <dst>userInfo.fullName</dst>
+    </mapping>
+
+    <mapping>
+        <src>user.age</src>
+        <dst>userInfo.age</dst>
+    </mapping>
+
+    <mapping>
+        <src>user.tags[]</src>
+        <dst>tags[]</dst>
+    </mapping>
+
+    <mapping>
+        <src>user.orders[].amount</src>
+        <dst>orders[].total</dst>
+        <multiply>1.1</multiply>
+    </mapping>
+
+    <mapping>
+        <src>user.orders[].items[].price</src>
+        <dst>orderItems[].cost</dst>
+    </mapping>
+</config>

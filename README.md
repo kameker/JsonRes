@@ -1,13 +1,12 @@
-package kameker;
+# JSON Restructure
 
+## Описание
+Инструмент для трансформации JSON-данных по XML-конфигурации маппинга.
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+## Использование
 
-import java.io.File;
-
-
-public class Main {
+### В коде
+```java
     private static final ObjectMapper MAPPER = new ObjectMapper();
     private static String jsonFileName = "input.json";
     static String CONFIG = "config.xml";
@@ -19,4 +18,3 @@ public class Main {
 
         System.out.println(MAPPER.writerWithDefaultPrettyPrinter().writeValueAsString(result));
     }
-}
