@@ -16,12 +16,13 @@
 
     <mapping>
         <src>user.orders[].amount</src>
-        <dst>orders[].total</dst>
-        <multiply>1.1</multiply>
+        <dst>orders[]</dst>
+        <multiply>1.5</multiply>
+        <scale>2</scale>
     </mapping>
 
     <mapping>
         <src>user.orders[].items[].price</src>
-        <dst>orderItems[].cost</dst>
+        <dst>orderPrice[]</dst>
     </mapping>
 </config>
